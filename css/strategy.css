@@ -1,0 +1,156 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-display: auto;
+  font-family: "Montserrat", sans-serif;
+  background-color: #E5E5E5;
+}
+
+.header {
+  height: 100%;
+  background-color: black;
+  background-size: cover;
+}
+
+.header .navbar {
+  padding: 50px;
+}
+
+.header .navbar .brand {
+  float: left;
+}
+
+.header .navbar .brand a {
+  color: white;
+  font-size: 30px;
+}
+
+.header .navbar .menu {
+  float: right;
+}
+
+.header .navbar .menu ul {
+  margin: 9px;
+  list-style-type: none;
+}
+
+.header .navbar .menu ul li {
+  color: white;
+  font-size: 20px;
+  display: inline;
+  margin-left: 20px;
+  padding-bottom: 6px;
+}
+
+.header .navbar .menu ul li a {
+  text-decoration: none;
+}
+
+.header .navbar .menu ul li a:active {
+  color: white;
+}
+
+.header .navbar .menu ul li a:visited {
+  color: white;
+}
+
+.header .header-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  height: 70%;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: white;
+}
+
+.header .header-content .thumbnail {
+  width: 555px;
+  height: 416px;
+  -webkit-box-shadow: 0 29px 32px -20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 29px 32px -20px rgba(0, 0, 0, 0.5);
+  margin: 9vh auto 30px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.header .header-content hr {
+  width: 200px;
+}
+
+.header .header-content .buttons {
+  margin-top: 20px;
+}
+
+.body {
+  padding: 70px;
+  background-color: white;
+  position: relative;
+  bottom: 140px;
+  margin: 50px;
+  border-radius: 40px;
+}
+
+.body .body-heading {
+  text-align: center;
+  padding: 20px;
+}
+
+.body .body-body {
+  text-align: center;
+}
+
+.btn {
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.btn-white {
+  background-color: white;
+  color: gray;
+}
+
+@media only screen and (max-width: 736px) {
+  .header .header-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .header .header-content .thumbnail {
+    width: 90%;
+    height: 299px;
+  }
+  .header .navbar {
+    text-align: center;
+  }
+  .header .navbar .brand {
+    display: inline;
+    float: none;
+    margin: auto;
+  }
+  .header .navbar .menu {
+    display: none;
+  }
+  .body {
+    position: relative;
+    bottom: 50px;
+    margin: 0px;
+    padding: 5px;
+  }
+  .body img {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=strategy.css.map */

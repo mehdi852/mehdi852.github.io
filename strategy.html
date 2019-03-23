@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="./css/strategy.css" />
+            <!-- Core CSS file -->
+        <link rel="stylesheet" href="/css/photoswipe.css"> 
+
+        <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+            In the folder of skin CSS file there are also:
+            - .png and .svg icons sprite, 
+            - preloader.gif (for browsers that do not support CSS animations) -->
+        <link rel="stylesheet" href="/css/default-skin.css"> 
+
+        <!-- Core JS file -->
+        <script src="/js/photoswipe.min.js"></script> 
+
+        <!-- UI JS file -->
+        <script src="js/photoswipe-ui-default.min.js"></script> 
+  
+</head>
+
+<body>
+    
+    <div class="header">
+            <div class="navbar">
+                    <div class="brand"><a>GreenPips</a></div>
+                    <div class="menu">
+                      <ul>
+                        <li class="menu-active"><a href="">Home</a></li>
+                        <li><a href="">How it works</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+
+                  <div class="header-content">
+                      <div class="left"><img class="thumbnail" src="/img/strategy1.jpg"></div>
+                      <div class="right">
+                          <h2> 5Min Scalping Strategy                            </h2>
+                          <p>PREMIUM REACT NATIVE APP TEMPLATE </p>
+                          <hr>
+                          <div class="buttons">
+                                <a class="btn btn-white">Strategy Rules</a>
+                                <a class="btn">Examples</a>
+                          </div>
+                      </div>
+                  </div>
+    </div>
+
+
+      <div class="body">
+          <div class="body-heading">
+              <h1>The 5MIN scalping strategy</h1>
+              <p>Many new traders are trying to find complex ways for quick profit,
+                   while ignoring easy and uncomplicated methods that can make their
+                    life much easier while trading.By applying this strategy correctly you will be able to see improvements in your profits,
+                     we also recommend that you apply the strategy in a demo account in order to get used to the method</p>
+          </div>
+          <div class="body-body">
+                <h2>How it work</h2>
+                <p>Before entering into the subject I want to say that the strategy works with all timeframes, but we found that the time of 5Min is the best in terms of accuracy and profits . We use exponential moving averages with periods of 20 and 50.We wait for the price and MA to go in the same direction and in parallel. At the same time, for a up trend line, the price should be
+                        higher than the moving averages, and the MA 50 is lower than the MA 20. For a downward trend,
+                        the opposite the price is lower than the moving average, and the MA50 is above MA20. Like this you can determine the direction of the trend,
+                        and wait for the setup.</p>
+                        <img height="400" src="/img/s1i1.jpg">
+                <h2>The Setup</h2>
+                <p>For sell entries , we wait for the price to retrace upward , once one candle enter in between the two moving averages we almost have a chance to sell , but not yet , we wait for that candle to close outside the two MA . thats going to be our entry  . </p>
+                <p>We open 2 sell positons , the first one without Take profit  , the second one with 8pip TP . once second one hit take profit , move the stoploss of the first trade to breakeven , this way 
+                    you are going to close 1 , and let 1 to go with trend , even if the trend reverse on us we lose nothing since we closed one trade , and we moved the stop loss of the first one.
+                </p>
+                <p>Note :  even if the price cross with 3 candles it is still valuable if the third candle close under 20 moving average , if the 
+                    price started floating in between 20 and 50MA we leave it and find  another setup
+                </p>
+                <img height="400" src="/img/s1i2.jpg">    
+                <p> For Buy entries its the opposite of what we have done earlier . Price must be above the two moving averages , 20MA above 50MA 
+                    . and an uptrend , we wait for a retracement price enters in between the two moving averages (max  3 candles in between 20MA 50MA )
+                    once price close above 20MA we look for a buy , we open 2 orders , same stop loss (max 5 pip) , and only one trade with tp . 
+                    once tp hit , move stop loss of the remaining trade to entry and enjoy surfing with the trend 
+                </p>
+                <h2>Examples</h2>
+
+
+
+
+                <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a class="imgclick"  itemprop="contentUrl" data-size="600x400">
+                            <img src="small-image.jpg" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Image caption</figcaption>
+                    </figure>
+                
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a class="imgclick"  itemprop="contentUrl" data-size="600x400">
+                            <img src="small-image.jpg" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Image caption</figcaption>
+                    </figure>
+                
+                
+                </div>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe. 
+             It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+    
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+    
+            <!-- Container that holds slides. 
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+    
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+    
+                <div class="pswp__top-bar">
+    
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+    
+                    <div class="pswp__counter"></div>
+    
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+    
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+    
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+    
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+    
+                    <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                          <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div> 
+                </div>
+    
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+    
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+    
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </div>
+
+
+
+          </div>
+      </div>
+
+      <script>
+            var pswpElement = document.querySelectorAll('.pswp')[0];
+            
+            // build items array
+            var items = [
+                {
+                    src: 'img/s1i1.jpg',
+                    w: 600,
+                    h: 400
+                },
+                {
+                    src: 'img/s1i2.jpg',
+                    w: 1200,
+                    h: 900
+                },
+                {
+                    src: 'img/section.png',
+                    w: 1200,
+                    h: 900
+                }
+            ];
+            
+            // define options (if needed)
+            var options = {
+                // optionName: 'option value'
+                // for example:
+                index: 0 // start at first slide
+            };
+            
+           
+            $( ".imgclick" ).click(function() {
+                 // Initializes and opens PhotoSwipe
+            var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+        
+                gallery.init();
+               
+            });
+
+     
+            </script>
+</body>
+
+</html>

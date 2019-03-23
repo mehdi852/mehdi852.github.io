@@ -1,0 +1,159 @@
+// colors
+$green-primary: #2ecc71;
+$red-danger: #e74c3c;
+$dark-blue: #34495e;
+$light-grey: #ecf0f1;
+
+$font: "Montserrat";
+
+html,
+body {
+  
+  height: 100%;
+  margin: 0;
+  font-display: auto;
+  font-family: $font, sans-serif;
+  background-color: #E5E5E5;
+  
+}
+.header{
+    height: 100%;
+    background-color: black;
+    background-size: cover;
+
+    // Navbar //
+.navbar {
+    padding: 50px;
+  
+    .brand {
+      float: left;
+      a {
+          color: white;
+        font-size: 30px;
+      }
+    }
+    .menu {
+      float: right;
+      ul {
+        margin: 9px;
+        list-style-type: none;
+        li {
+          color: white;
+          font-size: 20px;
+          display: inline;
+          margin-left: 20px;
+          padding-bottom: 6px;
+          a {
+            text-decoration: none;
+          }
+          a:active {
+            color: white;
+          }
+          a:visited {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .header-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 70%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: white;
+
+    .thumbnail{
+    width: 555px;
+    height: 416px;
+    box-shadow: 0 29px 32px -20px rgba(0,0,0,0.5);
+    margin: 9vh auto 30px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    border-radius: 20px;
+    }
+    hr{
+        width: 200px;
+
+    }
+    .buttons{
+        margin-top: 20px;
+    }
+    
+  }
+}
+
+.body{
+    padding: 70px;
+    background-color: white;
+
+    position: relative;
+    bottom: 140px;
+    margin: 50px;
+    border-radius: 40px;
+    .body-heading{
+        text-align: center;
+        padding: 20px;
+    }
+    .body-body{
+        text-align: center;
+    }
+}
+
+
+.btn{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.btn-white{
+    background-color: white;
+    color: gray;
+}
+
+@media only screen and (max-width: 736px) {
+  
+    
+   .header{
+    .header-content{
+        grid-template-columns: 1fr;
+    .thumbnail{
+        width: 90%;
+        height: 299px;
+         }
+         
+    }
+
+    .navbar{
+       text-align: center;
+        .brand{
+            display: inline;
+            float: none;
+            margin: auto;
+            a{
+               
+            }
+        }
+        .menu{
+            display: none;
+        }
+    }
+   }
+ 
+   .body{
+       position: relative;
+       bottom: 50px;
+       margin: 0px;
+       padding: 5px;
+
+
+       img{width: 100%;}
+   }
+
+}
