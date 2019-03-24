@@ -94,23 +94,20 @@
 
 
 
-                <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a class="imgclick"  itemprop="contentUrl" data-size="600x400">
-                            <img src="small-image.jpg" itemprop="thumbnail" alt="Image description" />
-                        </a>
-                        <figcaption itemprop="caption description">Image caption</figcaption>
-                    </figure>
-                
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a class="imgclick"  itemprop="contentUrl" data-size="600x400">
-                            <img src="small-image.jpg" itemprop="thumbnail" alt="Image description" />
-                        </a>
-                        <figcaption itemprop="caption description">Image caption</figcaption>
-                    </figure>
-                
-                
+                <div class="examples" >
+                   <div class="example">
+                       <img name="s1setup" class="imgclick" alt="scalping forex strategy" src="/img/s1setup.jpg">
+                       <div class="caption green">40Pip</div>
+                </div>
+                   <div class="example">
+                       <img name="s1setup2" class="imgclick" alt="scalping forex strategy" src="/img/s1setup2.jpg">
+                       <div class="caption green">40Pip</div>
+                       
+                    </div>
+                   <div class="example">
+                       <img name="s1setup2" class="imgclick" alt="scalping forex strategy" src="/img/s1setup.jpg">
+                       <div class="caption green">40Pip</div>
+                    </div>
                 </div>
 
 
@@ -202,21 +199,31 @@
                     h: 900
                 },
                 {
-                    src: 'img/section.png',
+                    src: 'img/s1setup.jpg',
+                    w: 1200,
+                    h: 900
+                },
+                {
+                    src: 'img/s1setup2.jpg',
                     w: 1200,
                     h: 900
                 }
             ];
             
             // define options (if needed)
-            var options = {
-                // optionName: 'option value'
-                // for example:
-                index: 0 // start at first slide
-            };
+          
             
            
             $( ".imgclick" ).click(function() {
+                var clikedname = $( this ).attr('name');
+                var imageList = ['s1i1','s1i2','s1setup.jpg','s1setup2.jpg'];
+                alert(clikedname);
+                var indexcliked = imageList.indexOf(clikedname+'.jpg'); // 1
+                var options = {
+                // optionName: 'option value'
+                // for example:
+                index: indexcliked // start at first slide
+            };
                  // Initializes and opens PhotoSwipe
             var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
         
