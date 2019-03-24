@@ -191,6 +191,13 @@ body {
 }
 
 @media only screen and (max-width: 400px) {
+  .header {
+    height: 119%;
+  }
+  .header .header-content .thumbnail {
+    width: 240px;
+    height: 210px;
+  }
   .body {
     border-radius: 0px;
     position: relative;
