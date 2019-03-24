@@ -108,8 +108,7 @@ body {
     .examples{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-      
-        
+       
         .example{
             width: 400px;
            
@@ -183,7 +182,7 @@ body {
            
           img{width: 100%;cursor: pointer;
             height: 200px;
-        }
+            }
         }
     }   
    }
