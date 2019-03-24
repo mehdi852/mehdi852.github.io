@@ -824,6 +824,9 @@ footer .info a:active {
     margin: 0;
     padding: 10px;
   }
+  body .left-img {
+    margin-top: 20px;
+  }
   body .navbar {
     padding: 40px 0px;
     text-align: center;
@@ -835,6 +838,7 @@ footer .info a:active {
     display: none;
   }
   body .stats {
+    height: auto;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }

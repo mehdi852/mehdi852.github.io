@@ -713,6 +713,7 @@ footer {
     padding: 10px;
   }
   body {
+    .left-img{margin-top: 20px;}
     .navbar {
       padding: 40px 0px;
       text-align: center;
@@ -724,7 +725,7 @@ footer {
       display: none;
     }
     .stats {
-     
+      height: auto;
       grid-template-columns: 1fr;
       .left {
         margin: 0px;
