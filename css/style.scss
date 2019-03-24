@@ -713,7 +713,7 @@ footer {
     padding: 10px;
   }
   body {
-    .left-img{margin-top: 20px;}
+    .left-img{margin-top: 20px; display: none;}
     .navbar {
       padding: 40px 0px;
       text-align: center;
@@ -732,6 +732,7 @@ footer {
       }
       .right {
         padding: 5px;
+        margin-top: 40px;
       }
     }
 
@@ -837,6 +838,8 @@ footer {
      
     }
   }
+
+  .modal{ padding: 5px !important; p span{font-size: 14px;}}
 }
 
 @media only screen and (max-width: 1366px) {
