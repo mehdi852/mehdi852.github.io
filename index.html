@@ -50,9 +50,9 @@
       <div class="menu">
         <ul>
           <li class="menu-active"><a href="">Home</a></li>
-          <li><a href="">How it works</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact Us</a></li>
+          <li><a class="how" href="#">How it works</a></li>
+          <li><a  class="strategies"  href="#">Stratigies</a></li>
+          <li><a href="">Contact </a></li>
         </ul>
       </div>
     </div>
@@ -70,7 +70,7 @@
         <br/>
         No subscriptions required , all free
       </p>
-      <a  id="six"  class=" button btn">GET IN</a>
+      <a  id="six"  class=" button btn">Live Signals</a>
       <img  class="arrow-down" src="./img/down-arrow.svg" alt="arrow" />
 
  
@@ -121,25 +121,28 @@
 
     <!-- Section 3 : 80% etc -->
     <div class="winrate">
+      <div class="st-div">
+          <span> Forex Strategies</span>
+          <hr />
+         <div class="desc">
+            <p>In order to make a profitable profit in this field you need a strategic strategy, 
+                we are happy to offer you some of the ways we use, you can choose the way that suits you .
+               </p>
+               <p>It is advisable to try the strategy in demo account in order to exercise well before opening a live account</p>
+         </div>
+  
+      <div class="examples hidden">
+           
+            <div>
+              <a href="/easy-5min-forex-strategy"><img class="card-img" src="/img/strategy1.jpg"></a>
+            </div>
+            <div><a href="/stochastic-oscillator-strategy"><img class="card-img" src="/img/strategy2.jpg"></a></div>
+            <div><img class="card-img" src="/img/strategy4.jpg"></div>
+            
+      </div>
+      </div>
 
-        <span> Forex Strategies</span>
-        <hr />
-       <div class="desc">
-          <p>In order to make a profitable profit in this field you need a strategic strategy, 
-              we are happy to offer you some of the ways we use, you can choose the way that suits you .
-             </p>
-             <p>It is advisable to try the strategy in demo account in order to exercise well before opening a live account</p>
-       </div>
-
-    <div class="examples hidden">
-         
-          <div>
-            <a href="/easy-5min-forex-strategy"><img class="card-img" src="/img/strategy1.jpg"></a>
-          </div>
-          <div><a href="/stochastic-oscillator-strategy"><img class="card-img" src="/img/strategy2.jpg"></a></div>
-          <div><img class="card-img" src="/img/strategy1.jpg"></div>
-          
-    </div>
+   
   </div>
 
      <!-- Footer  -->
@@ -151,7 +154,20 @@
      
      <script src="./js/form.js"></script>
      <script src="./js/modal.js"></script>
+     <script>
      
+     $(document).ready(function () {
+                            $('.how').click(function() {
+                            $('html, body').animate({
+                                scrollTop: $("div.win-bg").offset().top -100
+                            }, 1000)
+                            }),   $('.strategies').click(function() {
+                            $('html, body').animate({
+                                scrollTop: $("div.st-div").offset().top
+                            }, 1000)
+                            })
+                            });
+     </script>
   </body>
 </html>
 
